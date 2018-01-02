@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Block lifid á visir.is",
+    "description": "Losaðu þig við lifið á visir.is",
+    "version": "0.1",
+  
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html",
+      "default_title": "Lífið Blocker"
+    },
+    "permissions": [
+      "activeTab",
+      "storage",
+      "declarativeWebRequest"
+    ]
+  }
