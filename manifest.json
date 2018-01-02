@@ -1,17 +1,26 @@
 {
     "manifest_version": 2,
   
-    "name": "Block lifid á visir.is",
-    "description": "Losaðu þig við lifið á visir.is",
-    "version": "0.1",
+    "name": "Blokka íslenskar rusl síður",
+    "description": "Losaðu þig við rusl síður",
+    "version": "0.2",
   
     "browser_action": {
-      "default_icon": "icon.png",
+      "default_icon": "img/icon.png",
       "default_popup": "popup.html",
-      "default_title": "Lífið Blocker"
+      "default_title": "Haltu sjálfsvirðingu"
     },
+
+    "background": { 
+        "scripts": ["js/main.js"]
+    },
+
     "permissions": [
       "activeTab",
-      "storage"
+      "storage",
+      "webRequest",
+      "webNavigation",
+      "webRequestBlocking",
+      "*://*/*"
     ]
   }
